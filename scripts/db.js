@@ -1,10 +1,10 @@
 let questions = [
   {
     question: "Wie deklariert man eine Variable in JavaScript?",
-    answer_1: "var myVar;",
-    answer_2: "int myVar;",
-    answer_3: "let myVar;",
-    answer_4: "const myVar;",
+    answer_1: "var myVar",
+    answer_2: "int myVar",
+    answer_3: "let myVar",
+    answer_4: "const myVar",
     correctAnswer: "answer_1"
   },
   {

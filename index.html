@@ -64,20 +64,44 @@
           <h5 id="question-title" class="card-title">Frage</h5>
 
           <div class="answer-options">
-            <div class="card text-bg-primary first-answer">
-              <div id="answer-1" class="card-body">Antwort 1</div>
+            <div class="card answer-box">
+              <div
+                id="answer_1"
+                onclick="showAnswer('answer_1')"
+                class="card-body"
+              >
+                Antwort 1
+              </div>
             </div>
 
-            <div class="card text-bg-success second-answer">
-              <div id="answer-2" class="card-body">Antwort 2</div>
+            <div class="card  answer-box">
+              <div
+                id="answer_2"
+                onclick="showAnswer('answer_2')"
+                class="card-body"
+              >
+                Antwort 2
+              </div>
             </div>
 
-            <div class="card text-bg-warning third-answer">
-              <div id="answer-3" class="card-body">Antwort 3</div>
+            <div class="card   answer-box">
+              <div
+                id="answer_3"
+                onclick="showAnswer('answer_3')"
+                class="card-body"
+              >
+                Antwort 3
+              </div>
             </div>
 
-            <div class="card text-bg-danger fourth-answer">
-              <div id="answer-4" class="card-body">Antwort 4</div>
+            <div class="card answer-box">
+              <div
+                id="answer_4"
+                onclick="showAnswer('answer_4')"
+                class="card-body"
+              >
+                Antwort 4
+              </div>
             </div>
           </div>
         </div>
@@ -89,7 +113,7 @@
             <p id="total-questions">4</p>
             Fragen</span
           >
-          <button type="button" class="btn btn-primary">Nächste ></button>
+          <button id="next-button" type="button" class="btn btn-primary" disabled>Nächste ></button>
         </div>
       </div>
     </main>

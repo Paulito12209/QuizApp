@@ -24,36 +24,18 @@ main {
   margin-top: 16px;
 }
 
-.first-answer {
-  border: 2px solid #0ecaf0 !important;
+.answer-box {
+  border: 2px solid #518fc3 !important;
+  background-color: #bcdeff !important;
 }
 
-.first-answer:hover {
+.answer-box:hover {
   transform: scale(1.02);
+  cursor: pointer;
 }
 
-.second-answer {
-  border: 2px solid #d1fae0 !important;
-}
-
-.second-answer:hover {
-  transform: scale(1.02);
-}
-
-.third-answer {
-  border: 2px solid #fff8ea !important;
-}
-
-.third-answer:hover {
-  transform: scale(1.02);
-}
-
-.fourth-answer {
-  border: 2px solid #ffe4e0 !important;
-}
-
-.fourth-answer:hover {
-  transform: scale(1.02);
+.correct-answer-bg {
+  background-color: #1fc577 !important;
 }
 
 .card-footer {
@@ -65,4 +47,16 @@ main {
   display: flex;
   gap: 4px;
   padding-top: 8px;
+}
+
+.bg-success {
+  color: #e1f7eb !important;
+}
+
+.answer-icons {
+  background-color: #f8f8f8;
+  height: 24px !important;
+  width: 24px !important;
+  display: inline-block;
+  border-radius: 50%;
 }
