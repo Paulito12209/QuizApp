@@ -26,7 +26,7 @@
     <link rel="icon" href="assets/img/QuizApp_Logo.png" type="img2/x-icon" />
     <title>QuizApp</title>
   </head>
-  <body>
+  <body onload="init()">
     <header>
       <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
@@ -61,40 +61,39 @@
       <div class="card border-primary quiz-card">
         <img src="assets/img/QuizApp_Logo.png" class="card-img-top" alt="..." />
         <div class="card-body text-center border">
-          <h5 class="card-title">Frage 1</h5>
-          <p class="card-text">
-            Welches Element ist das häufigste in der Erdatmosphäre?
-          </p>
+          <h5 id="question-title" class="card-title">Frage</h5>
 
           <div class="answer-options">
             <div class="card text-bg-primary first-answer">
-              <div class="card-body">Antwort 1</div>
+              <div id="answer-1" class="card-body">Antwort 1</div>
             </div>
 
             <div class="card text-bg-success second-answer">
-              <div class="card-body">Antwort 2</div>
+              <div id="answer-2" class="card-body">Antwort 2</div>
             </div>
 
             <div class="card text-bg-warning third-answer">
-              <div class="card-body">Antwort 3</div>
+              <div id="answer-3" class="card-body">Antwort 3</div>
             </div>
 
             <div class="card text-bg-danger fourth-answer">
-              <div class="card-body">Antwort 4</div>
+              <div id="answer-4" class="card-body">Antwort 4</div>
             </div>
           </div>
         </div>
 
         <div class="card-footer">
           <span class="footer-counter">
-            <p>1</p>
+            <p id="current-question">1</p>
             von
-            <p>4</p>
-            Fragen</span>
+            <p id="total-questions">4</p>
+            Fragen</span
+          >
           <button type="button" class="btn btn-primary">Nächste ></button>
         </div>
       </div>
     </main>
   </body>
+  <script src="scripts/db.js"></script>
   <script src="script.js"></script>
 </html>
