@@ -12,3 +12,56 @@ main {
   min-height: 100vh;
   background-color: #add0ff;
 }
+
+.quiz-card {
+  width: 24rem;
+}
+
+.answer-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.first-answer {
+  border: 2px solid #0ecaf0 !important;
+}
+
+.first-answer:hover {
+  transform: scale(1.02);
+}
+
+.second-answer {
+  border: 2px solid #d1fae0 !important;
+}
+
+.second-answer:hover {
+  transform: scale(1.02);
+}
+
+.third-answer {
+  border: 2px solid #fff8ea !important;
+}
+
+.third-answer:hover {
+  transform: scale(1.02);
+}
+
+.fourth-answer {
+  border: 2px solid #ffe4e0 !important;
+}
+
+.fourth-answer:hover {
+  transform: scale(1.02);
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-counter {
+  display: flex;
+  gap: 4px;
+  padding-top: 8px;
+}

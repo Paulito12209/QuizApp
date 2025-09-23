@@ -58,15 +58,40 @@
       </nav>
     </header>
     <main>
-      <div class="card border-primary" style="width: 18rem">
+      <div class="card border-primary quiz-card">
         <img src="assets/img/QuizApp_Logo.png" class="card-img-top" alt="..." />
         <div class="card-body text-center border">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">Frage 1</h5>
           <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card’s content.
+            Welches Element ist das häufigste in der Erdatmosphäre?
           </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+
+          <div class="answer-options">
+            <div class="card text-bg-primary first-answer">
+              <div class="card-body">Antwort 1</div>
+            </div>
+
+            <div class="card text-bg-success second-answer">
+              <div class="card-body">Antwort 2</div>
+            </div>
+
+            <div class="card text-bg-warning third-answer">
+              <div class="card-body">Antwort 3</div>
+            </div>
+
+            <div class="card text-bg-danger fourth-answer">
+              <div class="card-body">Antwort 4</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <span class="footer-counter">
+            <p>1</p>
+            von
+            <p>4</p>
+            Fragen</span>
+          <button type="button" class="btn btn-primary">Nächste ></button>
         </div>
       </div>
     </main>
