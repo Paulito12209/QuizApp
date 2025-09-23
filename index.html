@@ -74,7 +74,7 @@
               </div>
             </div>
 
-            <div class="card  answer-box">
+            <div class="card answer-box">
               <div
                 id="answer_2"
                 onclick="showAnswer('answer_2')"
@@ -84,7 +84,7 @@
               </div>
             </div>
 
-            <div class="card   answer-box">
+            <div class="card answer-box">
               <div
                 id="answer_3"
                 onclick="showAnswer('answer_3')"
@@ -113,7 +113,15 @@
             <p id="total-questions">4</p>
             Fragen</span
           >
-          <button id="next-button" type="button" class="btn btn-primary" disabled>Nächste ></button>
+          <button
+            onclick="nextQuestion()"
+            id="next-button"
+            type="button"
+            class="btn btn-primary"
+            disabled
+          >
+            Nächste >
+          </button>
         </div>
       </div>
     </main>
