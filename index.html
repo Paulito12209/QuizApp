@@ -23,7 +23,11 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <link rel="icon" href="assets/img/QuizApp_Logo.png" type="img2/x-icon" />
+    <link
+      rel="icon"
+      href="assets/img/Quiz App Logo New.png"
+      type="img2/x-icon"
+    />
     <title>QuizApp</title>
   </head>
   <body onload="init()">
@@ -32,7 +36,7 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
-              src="assets/img/QuizApp_Logo 1.png"
+              src="assets/img/QuizApp_Logo.png"
               alt="Logo"
               width="30"
               height="30"
@@ -59,55 +63,57 @@
     </header>
     <main>
       <div class="card border-primary quiz-card">
-        <img src="assets/img/QuizApp_Logo.png" class="card-img-top" alt="..." />
+        <img id="quiz-banner" src="assets/img/QuizApp_Logo.png" class="card-img-top" alt="..." />
+        <img id="quiz-image" src="assets/img/trophy.png" alt="Trophäe" style="display: none;">
         <div class="card-body text-center border">
           <h5 id="question-title" class="card-title">Frage</h5>
-
-          <div class="answer-options">
-            <div class="card answer-box">
-              <div
-                id="answer_1"
-                onclick="showAnswer('answer_1')"
-                class="card-body"
-              >
-                Antwort 1
+          <div id="question-body">
+            <div class="answer-options">
+              <div class="card answer-box">
+                <div
+                  id="answer_1"
+                  onclick="showAnswer('answer_1')"
+                  class="card-body"
+                >
+                  Antwort 1
+                </div>
               </div>
-            </div>
 
-            <div class="card answer-box">
-              <div
-                id="answer_2"
-                onclick="showAnswer('answer_2')"
-                class="card-body"
-              >
-                Antwort 2
+              <div class="card answer-box">
+                <div
+                  id="answer_2"
+                  onclick="showAnswer('answer_2')"
+                  class="card-body"
+                >
+                  Antwort 2
+                </div>
               </div>
-            </div>
 
-            <div class="card answer-box">
-              <div
-                id="answer_3"
-                onclick="showAnswer('answer_3')"
-                class="card-body"
-              >
-                Antwort 3
+              <div class="card answer-box">
+                <div
+                  id="answer_3"
+                  onclick="showAnswer('answer_3')"
+                  class="card-body"
+                >
+                  Antwort 3
+                </div>
               </div>
-            </div>
 
-            <div class="card answer-box">
-              <div
-                id="answer_4"
-                onclick="showAnswer('answer_4')"
-                class="card-body"
-              >
-                Antwort 4
+              <div class="card answer-box">
+                <div
+                  id="answer_4"
+                  onclick="showAnswer('answer_4')"
+                  class="card-body"
+                >
+                  Antwort 4
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <div class="card-footer">
-          <span class="footer-counter">
+          <span id="footer-info" class="footer-counter">
             <p id="current-question">1</p>
             von
             <p id="total-questions">4</p>

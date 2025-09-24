@@ -1,19 +1,30 @@
 let currentQuestion = 0;
+let rightQuestion = 0;
 
 function init() {
   showQuestion();
 }
 
 function showQuestion() {
-  let question = questions[currentQuestion];
+  if (currentQuestion >= questions.length) {
+    document.getElementById("question-title").innerHTML = "Quiz beendet! 🎉";
+    document.getElementById("question-body").style = "display:none";
+    document.getElementById("footer-info").innerHTML =
+      "10 von 10 Fragen beantwortet!";
+    document.getElementById("next-button").style = "display:none";
+    document.getElementById("quiz-banner").style = "display:none";
+    document.getElementById("quiz-image").style = "";
+  } else {
+    let question = questions[currentQuestion];
 
-  document.getElementById("question-title").innerHTML = question.question;
-  document.getElementById("answer_1").innerHTML = question.answer_1;
-  document.getElementById("answer_2").innerHTML = question.answer_2;
-  document.getElementById("answer_3").innerHTML = question.answer_3;
-  document.getElementById("answer_4").innerHTML = question.answer_4;
-  document.getElementById("total-questions").innerHTML = questions.length;
-  showQuestionNumber();
+    document.getElementById("question-title").innerHTML = question.question;
+    document.getElementById("answer_1").innerHTML = question.answer_1;
+    document.getElementById("answer_2").innerHTML = question.answer_2;
+    document.getElementById("answer_3").innerHTML = question.answer_3;
+    document.getElementById("answer_4").innerHTML = question.answer_4;
+    document.getElementById("total-questions").innerHTML = questions.length;
+    showQuestionNumber();
+  }
 }
 
 function showAnswer(selection) {
