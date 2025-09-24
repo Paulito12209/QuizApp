@@ -1,7 +1,7 @@
 let currentQuestion = 0;
 let rightQuestion = 0;
-let CORRECT_AUDIO = new Audio("assets/audio/correct.pm3");
-let WRONG_AUDIO = new Audio("assets/audio/wrong.pm3");
+let CORRECT_AUDIO = new Audio("assets/audio/correct.mp3");
+let WRONG_AUDIO = new Audio("assets/audio/wrong.mp3");
 
 function init() {
   showQuestion();

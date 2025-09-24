@@ -51,7 +51,7 @@ let questions = [
     question: "Wie kommentiert man eine einzelne Zeile in JavaScript?",
     answer_1: "// Kommentar",
     answer_2: "# Kommentar",
-    answer_3: "<!-- Kommentar -->",
+    answer_3: "Kommentar",
     answer_4: "/* Kommentar */",
     correctAnswer: "answer_1"
   },
