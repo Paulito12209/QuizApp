@@ -4,6 +4,19 @@
   gap: 8px;
 }
 
+.start-quiz-btn {
+  background-color: #0b6ffd;
+  color: white;
+  padding-top: 12px;
+  padding-right: 0.75rem;
+  padding-bottom: 12px;
+  padding-left: 0.75rem;
+  border-radius: 0.375rem;
+  vertical-align: center;
+  text-align: center;
+  border: none;
+}
+
 main {
   display: flex;
   justify-content: center;
