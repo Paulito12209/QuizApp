@@ -10,7 +10,7 @@ function showQuestion() {
     document.getElementById("question-title").innerHTML = "Quiz beendet! 🎉";
     document.getElementById("question-body").style = "display:none";
     document.getElementById("footer-info").innerHTML =
-      "10 von 10 Fragen beantwortet!";
+      `Du hast ${rightQuestion} von ${questions.length} Fragen richtig beantwortet!`;
     document.getElementById("next-button").style = "display:none";
     document.getElementById("quiz-banner").style = "display:none";
     document.getElementById("quiz-image").style = "";
@@ -34,7 +34,8 @@ function showAnswer(selection) {
       ((document.getElementById(
         selection
       ).innerHTML = `<strong>${question[selection]}</strong> = ist korrekt! <span class="answer-icons">✅</span>`),
-      document.getElementById(selection).parentNode.classList.add("bg-success"))
+      document.getElementById(selection).parentNode.classList.add("bg-success"),
+      rightQuestion++)
     : // : console.log(`❌ Falsch!`);
       ((document.getElementById(
         selection
